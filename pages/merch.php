@@ -48,7 +48,7 @@
     </div>
 </div>
 
-<div class="merch-modal" id="merch-modal">
+<!-- <div class="merch-modal" id="merch-modal">
     <div class="merch-modal-content">
         <div class="merch-modal-left">
             <h2 id="merch-modal-title">HOODIE</h2>
@@ -62,4 +62,4 @@
         </div>
         <span class="merch-close" onclick="merch_closeModal()">&times;</span>
     </div>
-</div>
+</div> -->

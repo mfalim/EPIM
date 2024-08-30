@@ -110,6 +110,56 @@ nav .login-btn a:hover {
     color: #ccc;
 }
 
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 0.5rem 0;
+    }
+
+    nav .nav-left img {
+        height: 2rem;
+    }
+
+    nav .nav-right {
+        flex-direction: column;
+        margin-top: 0.5rem;
+    }
+
+    nav .nav-right ul {
+        flex-direction: column;
+    }
+
+    nav .nav-right ul li {
+        margin: 0.5rem 0;
+    }
+
+    nav .nav-right ul li a {
+        font-size: 1.2rem;
+    }
+
+    nav .login-btn a {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        padding: 0.4rem 0;
+    }
+
+    nav .nav-left img {
+        height: 1.8rem;
+    }
+
+    nav .nav-right ul li a {
+        font-size: 1rem;
+    }
+
+    nav .login-btn a {
+        font-size: 1.3rem;
+    }
+}
+
 .home-page {
     position: relative;
     color: #fff;
@@ -151,6 +201,33 @@ nav .login-btn a:hover {
     font-size: 8rem;
     margin: 0;
     font-weight: 900;
+}
+
+@media (max-width:768px) {
+    .home-page{
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .home-page p:first-of-type,
+    .home-page p:last-of-type {
+        font-size: 2rem;
+    }
+
+    .home-page{
+        font-size: 5rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .home-page p:first-of-type,
+    .home-page p:last-of-type {
+        font-size: 1.2rem;
+    }
+
+    .home-page h2 {
+        font-size: 2.5rem;
+    }
 }
 
 .concert-page {
@@ -236,6 +313,7 @@ hr {
     font-size: 1.1rem;
 }
 
+
 .buy-now-btn {
     color: #bb8b3f;
     padding: 0.5rem 1.5rem;
@@ -255,6 +333,11 @@ hr {
     border: 1px solid #000;
 }
 
+@media (max-width:768px){
+    
+}
+
+
 .seat-page {
     display: flex;
     flex-direction: column;
@@ -271,7 +354,7 @@ hr {
 .seat-image {
     flex: 1;
     max-width: 55%;
-    margin-left: 16rem;
+    margin-left: 1rem;
 }
 
 .seat-image img {
@@ -306,22 +389,301 @@ hr {
     margin: 0.7rem 0;
 }
 
+.ticket-page {
+    text-align: center;
+    padding: 80px 0;
+}
+
+.concert-description h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    color: #0C1844;
+    font-weight: 100;
+    font-size: 96px;
+    margin-bottom: 10px;
+}
+
+.ticket-selector {
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 3;
+}
+
+.ticket-button {
+    background-color: #cd7f32;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.ticket-button.active {
+    background-color: #b76e28;
+}
+
+.ticket-details {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.ticket-wrapper {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.ticket-image {
+    position: absolute;
+    top: -25px;
+    left: 20px;
+    z-index: 1;
+}
+
+.ticket-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.ticket-content {
+    position: relative;
+    border: 2px solid #cd7f32;
+    border-radius: 10px;
+    padding: 0 40px;
+    margin-top: 200px;
+    background-color: white;
+}
+
+.ticket-tittle {
+    position: absolute;
+    top: -35px;
+    left: 75%;
+    transform: translateX(-50%);
+    font-size: 2em;
+    color: #0C1844;
+    font-family: 'Playfair', sans-serif;
+    font-weight: 100;
+    width: auto;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.tittle-top {
+    font-size: 128px;
+    font-weight: 900;
+    letter-spacing: 10px;
+    text-align: center;
+}
+
+.tittle-bottom {
+    font-size: 96px;
+    border-bottom: 2px solid #cd7f32;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.ticket-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.ticket-description {
+    flex: 1;
+    max-width: 75%;
+    text-align: left;
+    margin-right: 40px;
+}
+
+.ticket-description h3,
+.ticket-description p {
+    font-size: 24px;
+    color: #0C1844;
+    margin: 55px 0 10px;
+}
+
+.ticket-info-location {
+    flex: 1;
+    max-width: 40%;
+    text-align: left;
+}
+
+.ticket-info-location h3 {
+    margin: 0;
+    padding-bottom: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+    font-size: 32px;
+}
+
+.ticket-info-location h3 strong {
+    font-weight: bold;
+}
+
+.ticket-info-more h3 {
+    padding: 20px;
+}
+
+.buy-button {
+    display: block;
+    background-color: transparent;
+    color: #cd7f32;
+    padding: 10px 20px;
+    border: 2px solid #cd7f32;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 60px;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.buy-button:hover {
+    background-color: #cd7f32;
+    color: white;
+}
+
+.ticket-info-date {
+    display: flex;
+}
+
+@media (max-width: 1024px) {
+    .ticket-content {
+        padding: 20px;
+        margin-top: 150px;
+    }
+    
+    .ticket-tittle {
+        top: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 1.5em;
+    }
+
+    .tittle-top {
+        font-size: 96px;
+    }
+
+    .tittle-bottom {
+        font-size: 72px;
+    }
+
+    .ticket-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ticket-description, 
+    .ticket-info-location {
+        max-width: 100%;
+        text-align: center;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .ticket-info-location h3 {
+        font-size: 28px;
+    }
+
+    .buy-button {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .ticket-wrapper {
+        padding-top: 80px;
+    }
+
+    .ticket-content {
+        padding: 15px;
+        margin-top: 100px;
+    }
+
+    .ticket-tittle {
+        top: -20px;
+    }
+
+    .tittle-top {
+        font-size: 72px;
+    }
+
+    .tittle-bottom {
+        font-size: 48px;
+    }
+
+    .ticket-description h3,
+    .ticket-description p,
+    .ticket-info-location h3 {
+        font-size: 20px;
+    }
+
+    .buy-button {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .concert-description h2 {
+        font-size: 64px;
+    }
+
+    .ticket-wrapper {
+        padding-top: 60px;
+    }
+
+    .ticket-content {
+        margin-top: 80px;
+        padding: 10px;
+    }
+
+    .ticket-tittle {
+        top: -15px;
+        font-size: 1.2em;
+    }
+
+    .tittle-top {
+        font-size: 48px;
+    }
+
+    .tittle-bottom {
+        font-size: 36px;
+    }
+
+    .ticket-description h3,
+    .ticket-description p,
+    .ticket-info-location h3 {
+        font-size: 18px;
+    }
+
+    .buy-button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+
 .merch-page {
-    padding: 5rem 0;
+    padding: 80px 0;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 30px;
 }
 
 .best-selling {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding-bottom: 7.5rem;
+    padding-bottom: 120px;
 }
 
 .merch-item {
-    flex: 1;
+    flex: 1; 
     max-width: 50%;
     margin: 0;
 }
@@ -330,30 +692,42 @@ hr {
 .merch-desk {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
     max-width: 100%;
     text-align: center;
 }
 
 .merch-image {
-    width: auto;
-    height: 100%;
-    max-width: 18rem;
-    max-height: 18rem;
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    max-height: 300px;
     object-fit: cover;
+    margin: 0 auto;
+}
+
+.merch-item {
+    flex: 1;
+    max-width: 50%;
     margin: 0;
 }
 
 .best-selling-title,
 .official-merch-title {
-    font-family: 'Bebas', sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
     font-weight: 100;
-    margin: 0.7rem 0;
+    margin: 10px 0;
 }
 
 .best-selling-title {
-    font-size: 1.5rem;
-    color: #bb8b3f;
+    font-size: 24px;
+    color: #CDA861;
+}
+
+.official-merch-title {
+    font-size: 96px;
+    font-weight: bold;
+    color: #0C1844;
 }
 
 .best-selling-left {
@@ -365,40 +739,111 @@ hr {
 }
 
 .best-selling-right {
+    max-width: 40%;
+    text-align: left;
+}
+
+.best-selling-right {
     text-align: right;
 }
 
 .merch-description {
-    font-family: 'Monserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: #333;
-    margin: 0.7px;
+    margin: 10px 0;
     max-width: 50%;
 }
 
 .merch-capt {
     font-family: 'Montserrat', sans-serif;
     color: #333;
-    margin: 0.7rem 0;
-    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.merch-description {
+    font-size: 16px;
+    text-align: left;
+}
+
+.merch-capt {
+    font-size: 16px;
     font-weight: 400;
     text-align: right;
     line-height: 1.5;
 }
 
-.merch-description {
-    font-size: 1rem;
-    text-align: left;
+.cart-icon img {
+    width: 30px;
+    margin: 10px 0;
+    cursor: pointer;
 }
 
-.merch-name,.merch-price {
+.merch-name,
+.merch-price {
     font-family: 'Montserrat', sans-serif;
 }
 
 .merch-name {
-    font-size: 1.2rem;
+    font-size: 20px;
     font-weight: lighter;
-    margin-bottom: 0.4rem;
+    margin-bottom: 5px;
     text-align: center;
+}
+
+.merch-price {
+    font-size: 20px;
+    color: #555;
+    text-align: right;
+    margin: 5px 0;
+}
+
+.merchandise-tittle {
+    color: #CDA861;
+    font-weight: 100;
+}
+
+.merch-more-merch {
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+    flex-wrap: wrap;
+    padding-bottom: 70px;
+    border-bottom: 1px solid #aaa;
+    cursor: pointer;
+}
+
+.merch-more-item {
+    text-align: center;
+    max-width: 22%; 
+    font-family: 'Montserrat', sans-serif;
+}
+
+.merch-more-item h3,
+.merch-more-item p {
+    margin: 0;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.merch-more-item h3 {
+    font-size: 32px;
+    font-weight: 100;
+    color: #0C1844;
+}
+
+.merch-more-item p {
+    font-size: 24px;
+    font-weight: 100;
+    color: #0C1844;
+}
+
+.small-merch-image {
+    width: 100%;
+    height: auto;
+}
+
+h2 {
+    margin-top: 5px;
+    font-size: 1.2rem;
 }
 
 .galery-page {
