@@ -15,9 +15,10 @@
         </div>
         <div class="best-selling-right">
             <h2 class="official-merch-title">
-                <span class="official-title">OFFICIAL</span>
+                <span class="official-title">OFFICIAL</span><br>
                 <span class="merchandise-title">MERCHANDISE</span>
             </h2>
+            <hr>
             <p class="merch-capt">
             The Eternal Sunshine Merchandise Collection offers an array of exclusive items designed to capture the essence of light, hope, and endless possibilities. Inspired by themes of renewal and positivity, each piece blends ethereal design with high-quality craftsmanship, allowing fans to carry a piece of the Eternal Sunshine experience with them. From apparel to accessories, every item in this collection celebrates music, emotion, and connection, making it the perfect way to relive the warmth and energy of the tour.
             </p>
