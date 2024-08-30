@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -12,11 +13,12 @@
         <div class="nav-left"><img src="asset/logo.png" alt="logo"></div>
         <div class="nav-right">
             <ul>
-                <li><a href="#" data-page="#">Home</a></li>
-                <li><a href="#" data-page="#">Concert</a></li>
-                <li><a href="#" data-page="#">Seat</a></li>
-                <li><a href="#" data-page="#">Ticket</a></li>
-                <li><a href="#" data-page="#">Merch</a></li>
+                <li><a href="#home-page" data-page="#home-page">Home</a></li>
+                <li><a href="#concert-page" data-page="#concert-page">Concert</a></li>
+                <li><a href="#seat-page" data-page="#seat-page">Seat</a></li>
+                <li><a href="#ticket-page" data-page="#ticket-page">Ticket</a></li>
+                <li><a href="#merch-page" data-page="#merch-page">Merchandise</a></li>
+                <li><button class="login-btn"><a href="#">&#128100;</a></button></li>
             </ul>
         </div>
     </nav>

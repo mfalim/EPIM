@@ -13,7 +13,7 @@
                 <p>08 am - 06 am</p>
             </div>
         </div>
-        <a href="#ticket-page" data-page="#ticket-page">&#128722;BUY NOW</a>
+            <a class="buy-now-btn" href="#ticket-page" data-page="#ticket-page">&#128722;BUY NOW</a>
     </div>
     <div class="concert-right">
         <img src="./asset/concert.jpg" alt="concert">
